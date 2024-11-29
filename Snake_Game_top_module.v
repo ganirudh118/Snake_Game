@@ -160,7 +160,7 @@ button_circuit B0(
 );
 
 random_num_generator RNG0(
-    .clk(clk),
+    .clk(clk_40),
     .reset(reset),
     .vh(v_disp),
     .hh(h_disp),
