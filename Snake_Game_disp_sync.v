@@ -20,7 +20,7 @@ module disp_sync(
     // Vertical counter
     if(rst)
       v_loc <= 10'b0000000001;
-    else if(h_loc == 11'b11001000000 && v_loc >= 10'b1000000000)  // 525, end of frame
+    else if(h_loc == 11'b11001000000 && v_loc >= 10'b1000001101)  // 525, end of frame
       v_loc <= 10'b0000000001;  // Reset to start of frame
     else if(h_loc == 11'b11001000000)  // End of one horizontal line
       v_loc <= v_loc + 10'b0000000001;  // Increment for vertical position
