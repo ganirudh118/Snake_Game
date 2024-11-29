@@ -63,9 +63,9 @@ output db
     
     4:begin
     if(sw)
-        state_next=5;
-    else
         state_next=4;
+    else
+        state_next=5;
     end
     
     5:begin
