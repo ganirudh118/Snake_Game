@@ -69,27 +69,27 @@ output db
     end
     
     5:begin
-    if(sw==1 && m_tick==1)
+        if(sw==0 && m_tick==1)
         state_next=6;
-    else if(sw==1 && m_tick==0)
+        else if(sw==0 && m_tick==0)
         state_next=5;
     else
         state_next=4;
     end
     
     6:begin
-    if(sw==1 && m_tick==1)
+        if(sw==0 && m_tick==1)
         state_next=7;
-    else if(sw==1 && m_tick==0)
+        else if(sw==0 && m_tick==0)
         state_next=6;
     else
         state_next=4;
     end
     
     7:begin
-    if(sw==1 && m_tick==1)
+        if(sw==0 && m_tick==1)
         state_next=0;
-    else if(sw==1 && m_tick==0)
+        else if(sw==0 && m_tick==0)
         state_next=7;
     else
         state_next=4;
